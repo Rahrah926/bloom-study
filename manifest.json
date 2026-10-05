@@ -1,0 +1,17 @@
+{
+  "name": "Bloom Study",
+  "short_name": "Bloom",
+  "description": "A beautiful student productivity and study planner.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff8fc",
+  "theme_color": "#9b7bb8",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./bloom-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

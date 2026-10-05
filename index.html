@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bloom</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#9b7bb8">
+</head>
+
+<body>
+
+    <!-- =====================================
+         TOP NAVIGATION
+    ====================================== -->
+
+    <header class="topbar">
+
+        <div class="logo" data-page="homePage">
+            <div class="logo-icon">✿</div>
+            <span>Bloom✿</span>
+        </div>
+
+        <nav class="top-nav">
+
+            <button data-page="homePage">
+                Home
+            </button>
+
+            <button data-page="dashboardPage">
+                Dashboard
+            </button>
+
+            <button data-page="tasksPage">
+                Tasks
+            </button>
+
+            <button data-page="plannerPage">
+                Planner
+            </button>
+
+            <button data-page="notesPage">
+                Notes
+            </button>
+
+            <button data-page="progressPage">
+                Progress
+            </button>
+
+            <button data-page="focusTimer">
+                Focus
+            </button>
+
+        </nav>
+
+
+        <!-- TOP RIGHT AUTH -->
+
+        <div class="auth-buttons" id="authButtons">
+
+            <button
+                class="nav-login"
+                id="loginButton">
+                Log in
+            </button>
+
+            <button
+                class="nav-signup"
+                id="signupButton">
+                Sign up
+            </button>
+
+        </div>
+
+
+        <!-- LOGGED IN USER -->
+
+        <div
+            class="user-area"
+            id="userArea"
+            style="display: none;">
+
+            <div class="user-avatar" id="userInitial">
+                A
+            </div>
+
+            <span id="navUserName">
+                User
+            </span>
+
+            <button id="logoutButton">
+                Log out
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         HOME PAGE
+    ====================================== -->
+
+    <main
+        class="page home-page"
+        id="homePage">
+
+        <section class="home-hero">
+
+            <div class="hero-decoration hero-one">
+                ✦
+            </div>
+
+            <div class="hero-decoration hero-two">
+                ✿
+            </div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    YOUR SPACE TO GROW
+                </p>
+
+                <h1>
+                    Study softly.
+                    <br>
+                    <span>Bloom beautifully.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Bloom is your personal study space for
+                    organizing tasks, planning your week,
+                    taking notes, tracking your progress
+                    and staying focused without the stress.
+                </p>
+
+                <div class="hero-badges">
+
+                    <span>✦ Plan</span>
+
+                    <span>✦ Focus</span>
+
+                    <span>✦ Grow</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FEATURES -->
+
+        <section class="features-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    EVERYTHING IN ONE PLACE
+                </p>
+
+                <h2>
+                    Made for your student life.
+                </h2>
+
+                <p>
+                    Keep your academic life organised
+                    while giving yourself room to breathe.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Smart Tasks
+                    </h3>
+
+                    <p>
+                        Keep track of assignments,
+                        study sessions and everything
+                        you need to get done.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ♡
+                    </div>
+
+                    <h3>
+                        Weekly Planner
+                    </h3>
+
+                    <p>
+                        See your whole week at a glance
+                        and plan your study time with ease.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ✎
+                    </div>
+
+                    <h3>
+                        Study Notes
+                    </h3>
+
+                    <p>
+                        Save important ideas, reminders
+                        and revision notes in one place.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ◷
+                    </div>
+
+                    <h3>
+                        Focus Timer
+                    </h3>
+
+                    <p>
+                        Choose your own focus time and
+                        create a study session that works
+                        for you.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ↗
+                    </div>
+
+                    <h3>
+                        Progress Tracking
+                    </h3>
+
+                    <p>
+                        Watch your completed tasks turn
+                        into visible progress.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ✿
+                    </div>
+
+                    <h3>
+                        Your Own Bloom
+                    </h3>
+
+                    <p>
+                        A calm little space made to help
+                        you become the student you want
+                        to be.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             BOTTOM HOME CTA
+        ====================================== -->
+
+        <section class="bottom-cta">
+
+            <div class="cta-content">
+
+                <p class="eyebrow">
+                    READY WHEN YOU ARE
+                </p>
+
+                <h2>
+                    Start creating your Bloom.
+                </h2>
+
+                <p>
+                    Your goals don't have to feel
+                    overwhelming. Take them one step
+                    at a time.
+                </p>
+
+
+                <div class="cta-buttons">
+
+                    <button
+                        class="primary-btn"
+                        id="bottomSignupButton">
+
+                        Create your Bloom
+
+                    </button>
+
+
+                    <button
+                        class="secondary-btn"
+                        id="bottomLoginButton">
+
+                        I already have an account
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================
+         LOGIN PAGE
+    ====================================== -->
+
+    <section
+        class="page auth-page"
+        id="loginPage">
+
+        <div class="auth-card">
+
+            <button
+                class="back-home"
+                data-page="homePage">
+
+                ← Back to Bloom
+
+            </button>
+
+            <div class="auth-icon">
+                ✿
+            </div>
+
+            <h1>
+                Welcome back
+            </h1>
+
+            <p>
+                Log in and continue blooming.
+            </p>
+
+
+            <form id="loginForm">
+
+                <label for="loginEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="you@example.com"
+                    required>
+
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required>
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="loginPassword">
+
+                        👁
+
+                    </button>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-submit">
+
+                    Log in
+
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Don't have an account?
+
+                <button
+                    type="button"
+                    id="switchToSignup">
+
+                    Sign up
+
+                </button>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SIGN UP PAGE
+    ====================================== -->
+
+    <section
+        class="page auth-page"
+        id="signupPage">
+
+        <div class="auth-card">
+
+            <button
+                class="back-home"
+                data-page="homePage">
+
+                ← Back to Bloom
+
+            </button>
+
+            <div class="auth-icon">
+                ✿
+            </div>
+
+            <h1>
+                Create your Bloom
+            </h1>
+
+            <p>
+                Let's make studying feel a little better.
+            </p>
+
+
+            <form id="signupForm">
+
+                <label for="signupName">
+                    Your name
+                </label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your name"
+                    required>
+
+
+                <label for="signupEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="you@example.com"
+                    required>
+
+
+                <label for="signupPassword">
+                    Password
+                </label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="At least 6 characters"
+                        required>
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="signupPassword">
+
+                        👁
+
+                    </button>
+
+                </div>
+
+
+                <label for="signupPasswordConfirm">
+                    Confirm password
+                </label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        id="signupPasswordConfirm"
+                        placeholder="Enter your password again"
+                        required>
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="signupPasswordConfirm">
+
+                        👁
+
+                    </button>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-submit">
+
+                    Create account
+
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Already have an account?
+
+                <button
+                    type="button"
+                    id="switchToLogin">
+
+                    Log in
+
+                </button>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         DASHBOARD
+    ====================================== -->
+
+    <section
+        class="page app-page"
+        id="dashboardPage">
+
+        <div class="page-heading">
+
+            <p class="eyebrow">
+                YOUR SPACE
+            </p>
+
+            <h1>
+                Welcome back,
+                <span id="dashboardUserName">
+                    User
+                </span> 🌷
+            </h1>
+
+            <p>
+                Let's make today a good study day.
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-grid">
+
+            <div class="dashboard-card">
+
+                <span>
+                    Total Tasks
+                </span>
+
+                <strong id="totalTasks">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>
+                    Completed
+                </span>
+
+                <strong id="completedTasks">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>
+                    Progress
+                </span>
+
+                <strong id="progressPercent">
+                    0%
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-welcome">
+
+            <div>
+
+                <p class="eyebrow">
+                    KEEP GOING
+                </p>
+
+                <h2>
+                    Small steps still count.
+                </h2>
+
+                <p>
+                    You don't have to do everything
+                    at once. Just keep moving.
+                </p>
+
+            </div>
+
+            <div class="dashboard-flower">
+                ✿
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         TASKS
+    ====================================== -->
+
+    <section
+        class="page app-page"
+        id="tasksPage">
+
+        <div class="page-heading">
+
+            <p class="eyebrow">
+                ORGANISE
+            </p>
+
+            <h1>
+                Your Tasks
+            </h1>
+
+            <p>
+                Turn your to-do list into tiny wins.
+            </p>
+
+        </div>
+
+
+        <form
+            class="add-form"
+            id="taskForm">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What do you need to do?"
+                required>
+
+            <input
+                type="text"
+                id="subjectInput"
+                placeholder="Subject (optional)">
+
+            <button
+                type="submit"
+                class="primary-btn">
+
+                Add Task
+
+            </button>
+
+        </form>
+
+
+        <div id="taskList"></div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PLANNER
+    ====================================== -->
+
+    <section
+        class="page app-page"
+        id="plannerPage">
+
+        <div class="page-heading planner-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    PLAN AHEAD
+                </p>
+
+                <h1>
+                    Weekly Planner
+                </h1>
+
+                <p>
+                    Give your week a little structure.
+                </p>
+
+            </div>
+
+
+            <button
+                class="primary-btn"
+                id="showPlanForm">
+
+                + Add plan
+
+            </button>
+
+        </div>
+
+
+        <div
+            id="planForm"
+            class="planner-form"
+            style="display: none;">
+
+            <form id="plannerForm">
+
+                <input
+                    type="text"
+                    id="planTitle"
+                    placeholder="Plan title"
+                    required>
+
+                <input
+                    type="text"
+                    id="planSubject"
+                    placeholder="Subject (optional)">
+
+
+                <select id="planDay" required>
+
+                    <option value="">
+                        Choose a day
+                    </option>
+
+                    <option value="Monday">
+                        Monday
+                    </option>
+
+                    <option value="Tuesday">
+                        Tuesday
+                    </option>
+
+                    <option value="Wednesday">
+                        Wednesday
+                    </option>
+
+                    <option value="Thursday">
+                        Thursday
+                    </option>
+
+                    <option value="Friday">
+                        Friday
+                    </option>
+
+                    <option value="Saturday">
+                        Saturday
+                    </option>
+
+                    <option value="Sunday">
+                        Sunday
+                    </option>
+
+                </select>
+
+
+                <input
+                    type="time"
+                    id="planTime">
+
+
+                <textarea
+                    id="planDescription"
+                    placeholder="Description (optional)">
+                </textarea>
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        Add to planner
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="secondary-btn"
+                        id="cancelPlan">
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <div
+            class="weekly-planner"
+            id="weeklyPlanner">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         NOTES
+    ====================================== -->
+
+    <section
+        class="page app-page"
+        id="notesPage">
+
+        <div class="page-heading">
+
+            <p class="eyebrow">
+                REMEMBER
+            </p>
+
+            <h1>
+                Study Notes
+            </h1>
+
+            <p>
+                Keep your important thoughts close.
+            </p>
+
+        </div>
+
+
+        <form
+            class="note-form"
+            id="noteForm">
+
+            <input
+                type="text"
+                id="noteTitle"
+                placeholder="Note title"
+                required>
+
+            <textarea
+                id="noteContent"
+                placeholder="Write your notes here..."
+                required>
+            </textarea>
+
+            <button
+                type="submit"
+                class="primary-btn">
+
+                Save Note
+
+            </button>
+
+        </form>
+
+
+        <div
+            class="notes-list"
+            id="notesList">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PROGRESS
+    ====================================== -->
+
+    <section
+        class="page app-page"
+        id="progressPage">
+
+        <div class="page-heading">
+
+            <p class="eyebrow">
+                LOOK HOW FAR YOU'VE COME
+            </p>
+
+            <h1>
+                Your Progress
+            </h1>
+
+            <p>
+                Every completed task is proof that
+                you're moving forward.
+            </p>
+
+        </div>
+
+
+        <div class="progress-main-card">
+
+            <div class="big-progress">
+
+                <strong id="progressPercentLarge">
+                    0%
+                </strong>
+
+                <span>
+                    completed
+                </span>
+
+            </div>
+
+
+            <div class="progress-track">
+
+                <div
+                    class="progress-bar"
+                    id="progressBar"
+                    style="width: 0%;">
+
+                </div>
+
+            </div>
+
+
+            <p id="progressMessage">
+                Add some tasks and start your journey.
+            </p>
+
+        </div>
+
+
+        <div class="progress-stats">
+
+            <div>
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="progressTotalTasks">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Completed
+                </span>
+
+                <strong id="progressCompletedTasks">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Remaining
+                </span>
+
+                <strong id="progressRemainingTasks">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         FOCUS TIMER
+    ====================================== -->
+
+    <section
+        class="page app-page timer-page"
+        id="focusTimer">
+
+        <div class="page-heading">
+
+            <p class="eyebrow">
+                FOCUS
+            </p>
+
+            <h1>
+                Your Focus Session
+            </h1>
+
+            <p>
+                Choose how long you want to focus.
+            </p>
+
+        </div>
+
+
+        <div class="timer-card">
+
+            <div
+                class="timer-display"
+                id="timerDisplay">
+
+                25:00
+
+            </div>
+
+
+            <div class="timer-input-area">
+
+                <label for="customMinutes">
+                    Focus time in minutes
+                </label>
+
+                <input
+                    type="number"
+                    id="customMinutes"
+                    min="1"
+                    max="600"
+                    value="25">
+
+            </div>
+
+
+            <div class="timer-buttons">
+
+                <button
+                    class="primary-btn"
+                    id="startTimer">
+
+                    Start Focus
+
+                </button>
+
+                <button
+                    class="secondary-btn"
+                    id="resetTimer">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
